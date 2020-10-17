@@ -1,0 +1,58 @@
+/* Styling of body w/background image and default color*/
+
+body {
+  background:  url(halloweenbackground.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: #cccccc;
+}
+
+/* Styling of h1*/
+
+h1 {
+  font-family: 'Piedra', cursive;
+  font-weight: bold;
+  font-size: 32pt;
+  text-align: center;
+}
+
+/* game board table */
+
+#board {
+  padding-left: 35%;
+}
+
+#board td {
+  width: 55px;
+  height: 55px;
+  border: solid 1.5px black;
+}
+
+/* pieces are div within game table cells */
+
+.piece {
+  margin: 5px;
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+}
+
+.piece.p1 {
+  background-color: darkred;
+}
+
+.piece.p2 {
+  background-color: purple;
+}
+
+/* column-top is table row of clickable areas for each column */
+
+#column-top td {
+  border: dashed 1.5px yellow;
+}
+
+#column-top td:hover {
+  background-color: black;
+}
